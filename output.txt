@@ -1,0 +1,167 @@
+CMP321 Parser Project
+
+-----File 1:
+Syntax is Correct
+
+
+-----File 2:
+Syntax is Correct
+
+
+-----File 3:
+Syntax is Correct
+
+
+-----File 4:
+
+Error 1 - No terminal matches '-' in the current parser context, at line 5 col 36
+
+move(N, From, To, Using) :- is(M, N-1), move(M, From, Using, To),
+                                   ^
+Expected one of: 
+	* COMMA
+	* UPPERCASE_CHAR
+	* DIGIT
+	* RPAR
+	* LOWERCASE_CHAR
+
+Total Errors in File 4: 1 error
+
+
+-----File 5:
+
+Error 1 - No terminal matches 'A' in the current parser context, at line 3 col 21
+
+factorial(N,A,F) :- A1 is N*A, N1 is N-1, factorial(N1,A1,F)
+                    ^
+Expected one of: 
+	* QUOTE
+	* LOWERCASE_CHAR
+
+Total Errors in File 5: 1 error
+
+
+-----File 6:
+
+Error 1 - No terminal matches '[' in the current parser context, at line 1 col 11
+
+mergeSort([], []).
+          ^
+Expected one of: 
+	* QUOTE
+	* UPPERCASE_CHAR
+	* LOWERCASE_CHAR
+	* DIGIT
+
+
+Error 2 - No terminal matches '[' in the current parser context, at line 3 col 11
+
+mergeSort([A], [A]).
+          ^
+Expected one of: 
+	* UPPERCASE_CHAR
+	* LOWERCASE_CHAR
+	* QUOTE
+	* DIGIT
+
+
+Error 3 - No terminal matches '[' in the current parser context, at line 5 col 11
+
+mergeSort([A, B | Rest], S) :- divide([A, B | Rest
+          ^
+Expected one of: 
+	* UPPERCASE_CHAR
+	* LOWERCASE_CHAR
+	* QUOTE
+	* DIGIT
+
+
+Error 4 - No terminal matches '[' in the current parser context, at line 7 col 8
+
+divide([], [], []). divide([A], [A], []).
+       ^
+Expected one of: 
+	* QUOTE
+	* DIGIT
+	* LOWERCASE_CHAR
+	* UPPERCASE_CHAR
+
+
+Error 5 - No terminal matches '[' in the current parser context, at line 8 col 9
+
+ divide([A], [A], []).
+        ^
+Expected one of: 
+	* QUOTE
+	* DIGIT
+	* LOWERCASE_CHAR
+	* UPPERCASE_CHAR
+
+
+Error 6 - No terminal matches '[' in the current parser context, at line 10 col 8
+
+divide([A, B | R], [A | Ra], [B | Rb]) :- divid
+       ^
+Expected one of: 
+	* QUOTE
+	* DIGIT
+	* LOWERCASE_CHAR
+	* UPPERCASE_CHAR
+
+
+Error 7 - No terminal matches '[' in the current parser context, at line 12 col 10
+
+merge(A, [], A). merge([], B, B).
+         ^
+Expected one of: 
+	* QUOTE
+	* DIGIT
+	* LOWERCASE_CHAR
+	* UPPERCASE_CHAR
+
+
+Error 8 - No terminal matches '[' in the current parser context, at line 13 col 8
+
+ merge([], B, B).
+       ^
+Expected one of: 
+	* QUOTE
+	* UPPERCASE_CHAR
+	* LOWERCASE_CHAR
+	* DIGIT
+
+
+Error 9 - No terminal matches '[' in the current parser context, at line 15 col 7
+
+merge([A | Ra], [B | Rb], [A | M]) :- A =< B, 
+      ^
+Expected one of: 
+	* QUOTE
+	* UPPERCASE_CHAR
+	* LOWERCASE_CHAR
+	* DIGIT
+
+
+Error 10 - No terminal matches '[' in the current parser context, at line 17 col 7
+
+merge([A | Ra], [B | Rb], [B | M]) :- A > B, m
+      ^
+Expected one of: 
+	* QUOTE
+	* UPPERCASE_CHAR
+	* LOWERCASE_CHAR
+	* DIGIT
+
+
+Error 11 - No terminal matches '[' in the current parser context, at line 19 col 14
+
+?- mergeSort([3, 4, 8, 0, 1, 9, 5, 6], Sorted).
+             ^
+Expected one of: 
+	* UPPERCASE_CHAR
+	* LOWERCASE_CHAR
+	* QUOTE
+	* DIGIT
+
+Total Errors in File 6: 11 errors
+
